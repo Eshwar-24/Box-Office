@@ -1,0 +1,249 @@
+.Main-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.img-not {
+  height: 40vh;
+}
+.heading {
+  color: rgb(29, 91, 197);
+  margin: 1px;
+  letter-spacing: 3px;
+}
+.para {
+  margin: 1px;
+}
+ul {
+  padding: 0px;
+}
+.Links {
+  margin-right: 10px;
+  text-decoration: none;
+  margin-left: 10px;
+  color: #c6c6c6;
+}
+.radio-container {
+  margin: 10px;
+}
+.search-engine {
+  border: 1px solid #dbdbdb;
+  font-size: 14px;
+  border-radius: 12px;
+  color: #8d8d8d;
+  padding: 13px;
+  margin: auto;
+  width: 200px;
+  font-family: "Roboto", "sans-serif";
+  display: block;
+  box-shadow: 0px 0px 10px 0px rgba(219, 219, 219, 0.5);
+}
+.selected-page {
+  margin-right: 10px;
+  text-decoration: underline;
+  text-decoration-color: rgb(29, 91, 197);
+  margin-left: 10px;
+}
+
+.search-btn {
+  margin: 5px;
+  background-color: rgb(29, 91, 197);
+  color: aliceblue;
+  border-width: 0px;
+  border-radius: 5px;
+  height: 30px;
+  width: 80px;
+}
+.rate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 60px;
+}
+.rate1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.kkk {
+  font-size: small;
+}
+.cont {
+  margin-left: 10px;
+  padding-left: 8px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+  padding-right: 8px;
+  font-size: small;
+  border-radius: 10px;
+  color: rgb(67, 34, 166);
+  background-color: rgba(183, 183, 218, 0.619);
+}
+.ok {
+  padding-top: 4px;
+  color: grey;
+  margin: 5px;
+}
+.cardgrid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /*width: 744.667px;
+  height: 1085.59px;*/
+  width: 100vw;
+  height: auto;
+}
+.card {
+  margin: 5px;
+  box-sizing: border-box;
+  width: 20vw;
+  height: 88vh;
+  overflow: hidden;
+}
+.data {
+  box-sizing: border-box;
+  height: 20%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.star-btn {
+  border: 0px;
+  background-color: #fff;
+}
+.star-logo {
+  height: 20px;
+}
+span {
+  color: lightgrey;
+  font-size: xX-large;
+  font-weight: lighter;
+}
+.ima {
+  height: 220px;
+  margin: 10px;
+  border-radius: 20px;
+}
+/*.card {
+  width: 300px;
+  height: 100%;
+  margin: 0px 15px 40px;
+}*/
+.image {
+  width: 100%;
+  overflow: hidden;
+  height: 65%;
+  border-radius: 15px;
+  border: 1px solid #ddd;
+}
+
+.cardname {
+  margin: 5px;
+  width: 100%;
+  font-size: 21px;
+  height: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-left: 0%;
+}
+/*.cardname:before {
+  content: attr(title);
+  visibility: hidden;
+}
+.cardname:hover:before {
+  opacity: 1;
+  visibility: visible;
+}*/
+.cardinfo {
+  margin: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 80px;
+}
+.btn {
+  display: flex;
+  justify-content: space-between;
+}
+.readmore {
+  color: #000;
+}
+.p1 {
+  margin: 4px;
+}
+.p {
+  margin: 2px;
+  font-size: small;
+}
+.readmore:hover {
+  color: blue;
+}
+.star {
+  border: 1px solid #ddd;
+  width: 50px;
+  border-radius: 15px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+.st:hover {
+  cursor: pointer;
+}
+.detailsp {
+  margin: 0px;
+}
+.season-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40vw;
+  margin-top: 19px;
+}
+.ai {
+  border-left: 1px;
+  border-bottom: 0px;
+  border-top: 0px;
+  border-right: 0px;
+  overflow: hidden;
+  padding: 10px 6px;
+  border-style: solid;
+  border-color: #b0b0b0;
+}
+.characters {
+  display: flex;
+  height: 10vh;
+  box-sizing: border-box;
+}
+.cast-image {
+  border-radius: 50%;
+  height: 7vh;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading-spinner {
+  margin: 25px;
+  width: 50px;
+  height: 50px;
+  border: 10px solid #f3f3f3; /* Light grey */
+  border-top: 10px solid rgb(67, 34, 166); /* Black */
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
