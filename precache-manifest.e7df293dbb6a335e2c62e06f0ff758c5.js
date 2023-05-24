@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "a331cd4a096cd27c00a4",
+    "revision": "bb5d2189913bca3280bf",
     "url": "/box-office/static/css/main.287504cc.chunk.css"
   },
   {
-    "revision": "a331cd4a096cd27c00a4",
-    "url": "/box-office/static/js/main.a331cd4a.chunk.js"
+    "revision": "bb5d2189913bca3280bf",
+    "url": "/box-office/static/js/main.bb5d2189.chunk.js"
   },
   {
     "revision": "3a79397ac1a1b3a66e79",
     "url": "/box-office/static/js/1.3a79397a.chunk.js"
   },
   {
-    "revision": "fd6485ab83a32a8dd06a",
-    "url": "/box-office/static/js/2.fd6485ab.chunk.js"
+    "revision": "8e7d84b0fe5005c1dd59",
+    "url": "/box-office/static/js/2.8e7d84b0.chunk.js"
   },
   {
     "revision": "cab3bbf61fc32b6a7188",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/box-office/static/media/404-error.9c3c5c34.jpg"
   },
   {
-    "revision": "9b9095b25bd59b06a767368ccc43c767",
+    "revision": "f8f4431c95a0b8c1241a09d14d141a34",
     "url": "/box-office/index.html"
   }
 ];
