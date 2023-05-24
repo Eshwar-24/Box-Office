@@ -4,22 +4,14 @@ import { api } from "../functions/apimanip";
 import Filter from "../Filter";
 import { useRadio, useSearch } from "../functions/customHooks";
 export default () => {
-  //let [searchoption, setSearchoption] = useState("shows");
   let [search, update] = useSearch();
 
-  /* let [select, setSelect] = useState(true);
-  const radiosele = () => {
-    setSelect((pre) => {
-      if (pre) setSearchoption("people");
-      else setSearchoption("shows");
-      return !pre;
-    });
-  };*/
-  let [select, searchoption, radiosele] = useRadio();
+  let [select, radiosele] = useRadio();
 
   const enterkey = (event) => (event.key == "Enter" ? searching() : "");
   let [results, setResults] = useState(null);
   const searching = () => {
+    let searchoption = select ? "shows" : "people";
     search
       ? api(`/search/${searchoption}?q=${search}`).then((re) => setResults(re))
       : setResults(null);

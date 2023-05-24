@@ -30,7 +30,7 @@ export default () => {
   useEffect(() => {
     api(`/shows/${id}?embed[]=seasons&embed[]=cast`)
       .then((re) => {
-        if (re.status == 404) {
+        if (re.status === 404) {
           d({ type: "NOT_FOUND", show: re });
         } else {
           d({ type: "NO_ERROR", show: re });
@@ -74,7 +74,7 @@ export default () => {
         <h3>Seasons</h3>
         <Seasons sea={s.results._embedded.seasons} />
       </div>
-      {s.results._embedded.cast.length != 0 && (
+      {s.results._embedded.cast.length !== 0 && (
         <div>
           <h3>Cast</h3>
           <Cast c={s.results._embedded.cast} />

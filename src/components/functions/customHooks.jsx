@@ -34,19 +34,16 @@ export function useSearch() {
   return [search, update];
 }
 export function useRadio() {
-  let [searchoption, setSearchoption] = useState("shows");
   let [select, setSelect] = useState(() => {
     let a = sessionStorage.getItem("search-option");
     return a ? JSON.parse(a) : true;
   });
   const radiosele = (set) => {
     setSelect((pre) => {
-      if (pre) setSearchoption("people");
-      else setSearchoption("shows");
-      sessionStorage.setItem("search-option", !pre);
+      sessionStorage.setItem("search-option", JSON.stringify(!pre));
       return !pre;
     });
   };
 
-  return [select, searchoption, radiosele];
+  return [select, radiosele];
 }

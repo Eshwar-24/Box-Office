@@ -4,7 +4,11 @@ import SELECT from "../images/select.png";
 import UNSELECT from "../images/unselect.png";
 export default ({ status, id, name, summary, image, stars }) => {
   let text = summary
-    ? `${summary.split(" ").slice(0, 10).join(" ").replace(/<.+?>/g, "")}...`
+    ? `${summary
+        .split(" ")
+        .slice(0, 10)
+        .join(" ")
+        .replace(/<.+?>/g, "")}...`
     : "no info";
   return (
     <div className="card">
@@ -21,6 +25,7 @@ export default ({ status, id, name, summary, image, stars }) => {
         <button className="star-btn" onClick={stars}>
           <img
             className="star-logo"
+            alt="star"
             src={status.includes(id) ? SELECT : UNSELECT}
           ></img>
         </button>
