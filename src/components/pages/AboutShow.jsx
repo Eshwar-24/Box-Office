@@ -6,7 +6,8 @@ import Seasons from "../showDetails/Seasons";
 import Cast from "../showDetails/Cast";
 import Details from "../showDetails/Details";
 import LoadingSpinner from "../Spinner";
-import NOT_FOUND from "../images/404-error.jpg";
+
+import NotFound from "./NotFound";
 let a = { results: null, error: false, spin: true, page: false };
 let b = (pre, action) => {
   switch (action.type) {
@@ -46,11 +47,7 @@ export default () => {
     );
   }
   if (s.page) {
-    return (
-      <div className="not-found">
-        <img className="img-not" src={NOT_FOUND} />
-      </div>
-    );
+    return <NotFound />;
   }
   if (s.error) {
     return <div>error {s.results}</div>;
